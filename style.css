@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/RobotoMono-Regular.woff2) format(woff2);
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(/fonts/RobotoMono-Medium.woff2) format(woff2);
+}
+@font-face {
+  font-family: "Roboto Italic";
+  src: url(/fonts/RobotoMono-Italic.woff2) format(woff2);
+}
+
+:root {
+  --bg-color: #252525;
+  --font-color: whitesmoke;
+}
+
+[data-theme="light"] {
+  --bg-color: whitesmoke;
+  --font-color: #252525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  width: 100vw;
+  height: 100%;
+}
+
+header div nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 18rem;
+  margin-left: 2rem;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  margin-top: 5rem;
+}
+
+main div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+p {
+  font-family: "Roboto Medium";
+  margin: 2rem;
+}
